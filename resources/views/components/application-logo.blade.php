@@ -1,0 +1,1 @@
+<img src="{{ asset('logo/haksenguz.jpg') }}" width="100px">
