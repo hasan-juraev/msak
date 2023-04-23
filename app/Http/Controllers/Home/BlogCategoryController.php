@@ -22,8 +22,6 @@ class BlogCategoryController extends Controller
 
     public function storeBlogCategory(Request $request)    
     {   
-
-        // find the id of image being updated and updated below columns
         BlogCategory::insert([
             'blog_category' => $request->blog_category,            
             'created_at' => Carbon::now()          

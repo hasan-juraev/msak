@@ -283,32 +283,31 @@ Home
             <div class="col-xl-5 col-lg-6">
                 <div class="testimonial__wrap">
                     <div class="section__title">
-                        <span class="sub-title">06 - Client Feedback</span>
-                        <h2 class="title">Happy clients feedback</h2>
+                        <span class="sub-title">Daily Hadith</span>
+                        <h2 class="title"> </h2>
                     </div>
+                    @php
+                        $hadiths = App\Models\Religon::latest()->take(3)->get();
+                    @endphp
                     <div class="testimonial__active">
+                        @foreach($hadiths as $item)
                         <div class="testimonial__item">
+
                             <div class="testimonial__icon">
                                 <i class="fas fa-quote-left"></i>
                             </div>
-                            <div class="testimonial__content">
-                                <p>We are motivated by the satisfaction of our clients. Put your trust in us &share in our H.Spond Asset Management is made up of a team of expert, committed and experienced people with a passion for financial markets. Our goal is to achieve continuous.</p>
-                                <div class="testimonial__avatar">
-                                    <span>Rasalina De Wiliamson</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial__item">
                             <div class="testimonial__icon">
-                                <i class="fas fa-quote-left"></i>
+                            <p>{!! $item->narrator !!}</p>
                             </div>
                             <div class="testimonial__content">
-                                <p>We are motivated by the satisfaction of our clients. Put your trust in us &share in our H.Spond Asset Management is made up of a team of expert, committed and experienced people with a passion for financial markets. Our goal is to achieve continuous.</p>
+                                <p>{!! $item->content !!}</p>
                                 <div class="testimonial__avatar">
-                                    <span>Rasalina De Wiliamson</span>
+                                    <span>{!! $item->hadith_reference !!}</span>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
+                      
                     </div>
                     <div class="testimonial__arrow"></div>
                 </div>

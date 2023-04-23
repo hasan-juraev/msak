@@ -25,7 +25,7 @@
             <div class="col-lg-6">
                 <div class="about__content">
                     <div class="section__title">
-                        <span class="sub-title">01 - About me</span>
+                        <span class="sub-title">01 - About</span>
                         <h2 class="title">{{ $about->title }}</h2>
                     </div>
                     <div class="about__exp">
@@ -37,7 +37,12 @@
                         </div>
                     </div>
                     
-                    <a href="about.html" class="btn">Download my resume</a>
+                    <!-- <form method="get" action="tips_for_muslims.pdf">
+                    <button type="submit">Download!</button>
+                    </form> -->
+                   <a href="tips_for_muslims.pdf" download="tips_for_muslims.pdf" class="btn">Download tips for Muslims</a>
+      
+
                 </div>
             </div>
         </div>

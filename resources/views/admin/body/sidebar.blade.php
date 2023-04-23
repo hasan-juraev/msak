@@ -58,6 +58,19 @@
                 </ul>
             </li>
 
+            <!-- Hadith -->
+            <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="ri-layout-3-line"></i>
+                    <span>Hadith Management</span>
+                </a>
+                <ul class="sub-menu" aria-expanded="true">
+                    <li>  <a href="{{ route('all.hadith') }}" class="has-arrow">All Hadith </a> </li>
+                    <li>  <a href="{{ route('add.hadith') }}" class="has-arrow">Add Hadith </a> </li>                  
+                   
+                </ul>
+            </li>
+
             <li class="menu-title">Pages</li>
 
             <!-- Blog Category -->
@@ -73,7 +86,7 @@
                 </ul>
             </li>
 
-            <!-- Blog Category -->
+            <!-- Blog  -->
             <li> 
                 
                 <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -86,7 +99,7 @@
                 </ul>
             </li>
             
-            <!-- Blog Category -->
+            <!-- Footer  -->
             <li>
                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                     <i class="ri-profile-line"></i>
@@ -98,7 +111,7 @@
                 </ul>
             </li>
 
-            <!-- Blog Category -->
+            <!-- Contact -->
             <li>
             <a href="javascript: void(0);" class="has-arrow waves-effect">
                 <i class="ri-profile-line"></i>
