@@ -12,7 +12,7 @@ class HomeSlide extends Model
     // 2 types of making migration tables fillable
 
     // 1- type
-    protected $guarded = [];
+    protected $guarded =[];
 
     // 2-type
     // protected $fillable = [

@@ -12,6 +12,7 @@ use App\Http\Controllers\Home\BlogController;
 use App\Http\Controllers\Home\FooterController;
 use App\Http\Controllers\Home\ContactController;
 use App\Http\Controllers\GoogleSocialiteController;
+use App\Http\Controllers\Religon\HadithController;
 
 
 /*
@@ -155,7 +156,12 @@ Route::controller(ContactController::class)->group(function () {
     
  });
 
-
+// Hadith routes
+Route::controller(HadithController::class)->group(function (){
+    Route::get('/add/hadith', 'addHadith')->name('add.hadith');
+    Route::get('/all/hadith', 'showAllHadith')->name('all.hadith');
+    Route::post('/store/hadith', 'storeHadith')->name('store.hadith');
+});
 
 
 require __DIR__.'/auth.php';

@@ -389,7 +389,7 @@ About
                 <div class="col-xl-9 col-lg-11">
                     <div class="testimonial__wrap">
                         <div class="section__title text-center">
-                            <span class="sub-title">06 - Client Feedback</span>
+                            <span class="sub-title">Daily Hadith</span>
                             <h2 class="title">Some happy clients feedback</h2>
                         </div>
                         <div class="testimonial__two__active">
